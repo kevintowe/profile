@@ -81,7 +81,7 @@
             "tsConfig": "apps/pwa/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": ["apps/pwa/src/favicon.ico", "apps/pwa/src/assets"],
-            "styles": ["apps/pwa/src/styles.scss"],
+            "styles": ["./node_modules/@angular/material/prebuilt-themes/indigo-pink.css", "apps/pwa/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -129,7 +129,8 @@
           },
           "defaultConfiguration": "development",
           "options": {
-            "proxyConfig": "apps/pwa/proxy.conf.json"
+            "proxyConfig": "apps/pwa/proxy.conf.json",
+            "browserTarget": "pwa:production"
           }
         },
         "extract-i18n": {
